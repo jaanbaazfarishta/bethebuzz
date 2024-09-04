@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(60deg, #af21d2, #C11AB4, #B2009A, #AE0085, #C4006B, #B50042, #B30032, #9F2118, #BC5812, #C87019);
+    background-size: 100% 55%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/assets/images/curtain.gif"); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .075;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45.5%;
+    background-image: linear-gradient(90deg, #121212, #010561);
+    box-shadow: 0 0 200px 100px #010561;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+nav img:last-child{
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+nav div:last-child{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 100%;
+}
